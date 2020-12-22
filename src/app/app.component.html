@@ -1,0 +1,23 @@
+<div class="container">
+  <div>
+    <span>体重</span>
+    <input #weightRef type="number" />
+    <span>kg</span>
+  </div>
+  <div>
+    <span>身高</span>
+    <input #heightRef type="number" />
+    <span>cm</span>
+  </div>
+  <div [hidden]="!showResult">
+    <span>您的bmi为:{{bmi}}</span>
+  </div>
+</div>
+<div class="container">
+  <div>
+    <input #powBaseRef type="text" />
+  </div>
+  <div>
+    <input #powNumberRef type="text" />
+  </div>
+</div>
